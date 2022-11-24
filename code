@@ -1,0 +1,13 @@
+# Linear Search
+List=[]
+n=int(input("Enter the number of elements that you want to add in the list"))
+for i in range (n):
+    value=float(input("Enter the value to be added in the list"))
+    List.append(value)
+number=int(input("Enter a number to search in list"))
+def LinearSearch(List, number):
+    for i in range(n):
+        if List[i]==number:
+            return i
+
+print(f"{(LinearSearch(List, number))} is the index at which the searched number is present:")
